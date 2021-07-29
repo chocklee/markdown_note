@@ -93,7 +93,7 @@
 
 ##### 3、视图响应流程
 
-###### a、事件的响应是通过==响应链==来传递的
+###### a、事件的响应是通过响应链来传递的
 
 <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0dc62693c9d14c228c15c88047bf555d~tplv-k3u1fbpfcp-watermark.image" alt="img" style="zoom:50%;" />
 
@@ -1232,3 +1232,10 @@ Class objectMetaClass = object_getClass([NSObject class]);
 >  不论在ARC还是MRC下,栈中的block不会对捕获到的==对象类型auto变量==进行强引用(引用计数+1), 只会在copy到堆中时, 会对==对象类型auto变量==进行强引用
 >  ARC下, 被__weak修饰的==对象类型auto变量==, 在block复制到堆中时不会进行强引用
 
+## 多线程相关
+
+### GCD
+
+#### 1、同步/异步 & 串行/并发
+
+a、
